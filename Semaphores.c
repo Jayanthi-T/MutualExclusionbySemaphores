@@ -4,7 +4,7 @@ struct semaphore
 {
     int mutex;
     int rcount;
-    int rwait;    
+    int rwait;
     bool wrt;
 };
 void addR(struct semaphore *s)  
