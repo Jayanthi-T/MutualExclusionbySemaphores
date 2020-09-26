@@ -4,10 +4,10 @@ struct semaphore
 {
     int mutex;
     int rcount;
-    int rwait;   
+    int rwait;    
     bool wrt;
 };
-void addR(struct semaphore *s)
+void addR(struct semaphore *s)  
 {
     if(s->mutex == 0 && s->rcount == 0)
     {
