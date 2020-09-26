@@ -8,7 +8,7 @@ struct semaphore
     bool wrt;
 };
 void addR(struct semaphore *s)  
-{
+{  
     if(s->mutex == 0 && s->rcount == 0)
     {
         cout<<"\nSorry, File open in Write mode.\nNew Reader added to queue.\n";
